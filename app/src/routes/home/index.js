@@ -7,8 +7,10 @@ const ctrl = require("./home.ctrl");
 router.get('/', ctrl.output.home);
 router.get('/login', ctrl.output.login);
 router.get('/register', ctrl.output.register);
-router.post('/login', ctrl.process.login);
 router.get('/write', ctrl.write);
+
+router.post('/login', ctrl.process.login);
+router.post('/register', ctrl.process.register);
 
 // router.get('/write', function(요청,응답){
 //     응답.sendFile(__dirname + '/write.html')
