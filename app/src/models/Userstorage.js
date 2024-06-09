@@ -21,7 +21,7 @@ class Userstorage{
         if(isAll) return users;
         const newUsers = fields.reduce((newUsers, field)=>{
             if(users.hasOwnProperty(field)){
-                newUsers[field] = users[field];
+                newUsers[field] = users[field]; 
             }
             return newUsers;
         }, {});
