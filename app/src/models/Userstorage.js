@@ -32,7 +32,7 @@ class Userstorage{
         return fs
         .readFile("./src/databases/users.json")
         .then((data) => {
-            return this.#getUsers(data, isAll, fields);
+            return this.#getUsers(data, isAll, fields); 
         })
         .catch(console.error);
     }
